@@ -35,5 +35,11 @@ This is where the chat messages are printed.  `chat.js` automatically assigns th
     }
     
 #### #status
+This element gets filled with useful information for the uses, such as errors and prompts for the user
 
+#### #input
+A simple html input field for the user to type in
+
+#### #youtube
+This is where the youtube video will get loaded when they post a youtube video
     
