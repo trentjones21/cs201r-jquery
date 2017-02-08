@@ -44,6 +44,7 @@ A simple html input field for the user to type in
 This is where the youtube video will get loaded when they post a youtube video
     
 ## Simple Example
+This is about as simple of an example as you can get.  Feel free to copy and paste it in to a file to get started
 ```
 <!DOCTYPE html>
 <html>
