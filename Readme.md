@@ -1,6 +1,6 @@
 # CS 201R Creative Project 2
 
-A simple chat application that allows friends to share youtube videos, watch them at the same time, and talk about them.  
+A simple chat application that allows friends to share youtube videos, watch them at the same time, and talk about them.  To share a youtube video, all they need to do is paste the youtube link in to a chat message and it will start playing the video for all users. 
 
 ## chat.js
 There is a file called chat.js that handles all the interactions between the view and the api.  In order to use it, you just need to add a few things to your html.  
