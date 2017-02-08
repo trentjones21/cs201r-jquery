@@ -43,3 +43,22 @@ A simple html input field for the user to type in
 #### #youtube
 This is where the youtube video will get loaded when they post a youtube video
     
+## Simple Example
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebSockets - Simple chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./chat.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat"></div>
+    <span id="status">Connecting...</span>
+    <input type="text" id="input" disabled="disabled" />
+    <div id="youtube"></div>
+</body>
+</html>
+```
