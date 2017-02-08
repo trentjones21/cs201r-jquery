@@ -7,6 +7,7 @@ There is a file called chat.js that handles all the interactions between the vie
 
 ### Load jquery & chat.js in your html
 Since chat.js depends on Jquery, you must load jquery first.  Adding this to the `<head>` of your html should do the trick
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./chat.js"></script>
     
