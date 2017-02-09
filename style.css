@@ -20,6 +20,8 @@ h2{
 
 #bodyDiv{
 	display: flex ;
+	min-width: 1100px;
+	overflow: hidden;
 }
 
 #chatDiv{
@@ -30,14 +32,14 @@ h2{
 	width: calc(400px - 32px);
 	overflow-y: scroll;
 	padding: 16px;
-	z-index: 0;
+	z-index: 2000;
 	border-left: 1px solid #333;
 	background-color: #111115 ;
 }
 
 #chat{
 	width: 100% ;
-	padding-bottom: 16px;
+	padding-bottom: 64px;
 }
 
 #status{
@@ -77,4 +79,10 @@ h2{
 	border-top: 1px solid #333;
 	margin: -16px;
 	padding: 16px;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	width: calc(400px - 32px);
+	background-color: #111115 ;
+
 }
