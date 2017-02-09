@@ -2,6 +2,7 @@ $(function () {
     "use strict";
 
     var chat = $('#chat');
+    var chatDiv = $('#chatDiv');
     var input = $('#input');
     var status = $('#status');
     var youtube = $('#youtube');
@@ -41,7 +42,7 @@ $(function () {
 
         if (json.type === 'color') {
             myColor = json.data;
-            status.text(myName + ': ').css('color', myColor);
+            status.text(`Posting as ${myName}:`).css('color', myColor);
             input.removeAttr('disabled').focus();
         } else if (json.type === 'history') {
             for (var i=0; i < json.data.length; i++) {
@@ -85,11 +86,12 @@ $(function () {
 
     function addMessage(author, message, color, dt) {
         chat.append(`
-            <p>
+            <p class="message">
                 <span style="color:${color}">${author}</span>
                 ${message}
             </p>
         `);
         chat.scrollTop(40000);
+        chatDiv.scrollTop(40000);
     }
 });

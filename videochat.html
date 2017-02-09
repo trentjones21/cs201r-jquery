@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Video Share</h1>
-	<h2>Welcome to Video Share. Just type a user name to start chatting.<br>
-		Then paste a video's link into a chat message to start sharing!
-	</h2>
-	
-	<div id="bodyDiv">
-	<div id="chatDiv">
-    <div id="chat"></div>
-    <span id="status">Connecting...</span>
-    <input type="text" id="input" disabled="disabled" />
-	</div>
-	<div id="youtube"></div>
-	</div>
-	
-    
+    <div id="bodyDiv">
+        <div id="youtubeDiv">
+            <h1>Video Share</h1>
+            <h2>Welcome to Video Share. Just type a user name to start chatting.<br>
+                Then paste a video's link into a chat message to start sharing!
+            </h2>
+
+            <div id="youtube"></div>
+        </div>
+        <div id="chatDiv">
+            <div id="chat"></div>
+            <div id='inputDiv'>
+                <span id="status">Connecting...</span>
+                <br />
+                <input type="text" id="input" disabled="disabled" placeholder="Enter your message" />
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
