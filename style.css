@@ -1,0 +1,47 @@
+body{
+	color: grey ;
+	background-color: black ;
+	font-family: fantasy ;
+}
+
+h1{
+	text-align: center ;
+	font-size: 40pt ;
+	margin: 0 ;
+}
+
+h2{
+	text-align: center ;
+	font-size: 12pt ;
+	font-family: arial ;
+	margin: 0 ;
+}
+
+#bodyDiv{
+	display: flex ;
+}
+
+#chatDiv{
+	width: 50% ;
+}
+
+#chat{
+	width: 100% ;
+}
+
+#status{
+	
+}
+
+#input{
+	
+}
+
+#youtube{
+	width: 50% ;
+	float: right ;
+}
+
+.message{
+	font-family: arial ;
+}
