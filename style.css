@@ -8,7 +8,6 @@ h1{
 	text-align: center ;
 	font-size: 40pt ;
 	margin: 0 ;
-	font-family: fantasy;
 }
 
 h2{
@@ -33,7 +32,7 @@ h2{
 	overflow-y: scroll;
 	padding: 16px;
 	z-index: 2000;
-	border-left: 1px solid #333;
+	border-left: 1px solid #335;
 	background-color: #111115 ;
 }
 
@@ -76,7 +75,7 @@ h2{
 }
 
 #inputDiv {
-	border-top: 1px solid #333;
+	border-top: 1px solid #335;
 	margin: -16px;
 	padding: 16px;
 	position: fixed;
@@ -85,4 +84,38 @@ h2{
 	width: calc(400px - 32px);
 	background-color: #111115 ;
 
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 32px;
+}
+
+a {
+	color: pink;
 }

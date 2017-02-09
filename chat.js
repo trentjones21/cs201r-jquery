@@ -53,7 +53,12 @@ $(function () {
             addMessage(json.data.author, json.data.text, json.data.color, new Date(json.data.time));
         } else if (json.type === 'youtube') {
             input.removeAttr('disabled');
-            youtube.html(`<iframe width="640" height="360" src="https://www.youtube.com/embed/${json.youtubeId}?autoplay=1&rel=0&amp;controls=0" frameborder="0"></iframe>`);
+            youtube.html(`
+                <div class='container'>
+                    <iframe class='video' id="youtubeFrame" src="https://www.youtube.com/embed/${json.youtubeId}?autoplay=1&rel=0&amp;controls=0" frameborder="0">
+                    </iframe>
+                </div>
+            `);
             addMessage(json.data.author, json.data.text, json.data.color, new Date(json.data.time));
         } else {
             console.log('Hmm..., I\'ve never seen JSON like this: ', json);
@@ -82,16 +87,26 @@ $(function () {
             input.attr('disabled', 'disabled').val('Unable to comminucate '
             + 'with the WebSocket server.');
         }
-    }, 3000);
+    }, 10000);
 
     function addMessage(author, message, color, dt) {
         chat.append(`
             <p class="message">
-                <span style="color:${color}">${author}</span>
-                ${message}
+            <span style="color:${color}">${author}</span>
+            ${message}
             </p>
         `);
         chat.scrollTop(40000);
         chatDiv.scrollTop(40000);
     }
+
+    $(window).resize(function() {
+        var newWidth = youtube.width;
+
+        var $el = $('#youtubeFrame');
+        console.log('$el', $el);
+        console.log('$el.data("aspectRatio")', $el.data("aspectRatio"));
+        $el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
+    });
+
 });
