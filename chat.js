@@ -45,9 +45,9 @@ $(function () {
             status.text(`Posting as ${myName}:`).css('color', myColor);
             input.removeAttr('disabled').focus();
         } else if (json.type === 'history') {
-            for (var i=0; i < json.data.length; i++) {
-                addMessage(json.data[i].author, json.data[i].text, json.data[i].color, new Date(json.data[i].time));
-            }
+            // for (var i=0; i < json.data.length; i++) {
+            //     addMessage(json.data[i].author, json.data[i].text, json.data[i].color, new Date(json.data[i].time));
+            // }
         } else if (json.type === 'message') {
             input.removeAttr('disabled');
             addMessage(json.data.author, json.data.text, json.data.color, new Date(json.data.time));
