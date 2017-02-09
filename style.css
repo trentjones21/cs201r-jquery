@@ -1,13 +1,14 @@
 body{
 	color: grey ;
-	background-color: black ;
-	font-family: fantasy ;
+	font-family: helvetica ;
+	background: #222;
 }
 
 h1{
 	text-align: center ;
 	font-size: 40pt ;
 	margin: 0 ;
+	font-family: fantasy;
 }
 
 h2{
@@ -19,29 +20,69 @@ h2{
 
 #bodyDiv{
 	display: flex ;
+	min-width: 1100px;
+	overflow: hidden;
 }
 
 #chatDiv{
-	width: 50% ;
+	position: fixed;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	width: calc(400px - 32px);
+	overflow-y: scroll;
+	padding: 16px;
+	z-index: 2000;
+	border-left: 1px solid #333;
+	background-color: #111115 ;
 }
 
 #chat{
 	width: 100% ;
+	padding-bottom: 64px;
 }
 
 #status{
-	
+
 }
 
 #input{
-	
+	width: calc(100% - 16px);
+	height: 16px;
+	margin-top: 8px;
+	font-size: 16px;
+	padding: 8px;
+	border: 0px;
+	outline: none;
 }
 
-#youtube{
-	width: 50% ;
-	float: right ;
+#youtubeDiv{
+	position: fixed;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	width: calc(100% - 400px);
+	text-align: center;
+	padding-top: 16px;
+	z-index: 1000;
+}
+
+#youtube {
+	margin-top: 16px;
 }
 
 .message{
-	font-family: arial ;
+	font-family: arial;
+}
+
+#inputDiv {
+	border-top: 1px solid #333;
+	margin: -16px;
+	padding: 16px;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	width: calc(400px - 32px);
+	background-color: #111115 ;
+
 }
