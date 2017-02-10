@@ -95,7 +95,7 @@ $(function () {
         chat.append(`
             <p class="message">
             <span style="color:${color}">${strippedAuthor}</span>
-            ${strippedString}
+            ${message}
             </p>
         `);
         chat.scrollTop(40000);
