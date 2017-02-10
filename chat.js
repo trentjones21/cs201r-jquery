@@ -91,7 +91,7 @@ $(function () {
 
     function addMessage(author, message, color, dt) {
         var strippedString = message.replace(/(<([^>]+)>)/ig,"");
-        var strippedAuthor = message.replace(/(<([^>]+)>)/ig,"");
+        var strippedAuthor = author.replace(/(<([^>]+)>)/ig,"");
         chat.append(`
             <p class="message">
             <span style="color:${color}">${strippedAuthor}</span>
